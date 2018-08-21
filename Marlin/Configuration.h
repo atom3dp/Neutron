@@ -190,10 +190,15 @@
   #define PID_dT ((16.0 * 8.0)/(F_CPU / 64.0 / 256.0)) //sampling period of the temperature routine
 
 // If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
+// Neutron
+    #define  DEFAULT_Kp  9.36//9.03
+    #define  DEFAULT_Ki  0.76//0.74
+    #define  DEFAULT_Kd  28.98//27.37
+
 // Ultimaker
-    #define  DEFAULT_Kp  9.3//15.98//16.54
-    #define  DEFAULT_Ki  0.64//2.24//1.3
-    #define  DEFAULT_Kd  33.69//28.55//52.56
+//    #define  DEFAULT_Kp  9.3//15.98//16.54
+//    #define  DEFAULT_Ki  0.64//2.24//1.3
+//    #define  DEFAULT_Kd  33.69//28.55//52.56
 
 // Makergear
 //    #define  DEFAULT_Kp 7.0
@@ -309,10 +314,10 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define DISABLE_Z false
 #define DISABLE_E false // For all extruders
 
-#define INVERT_X_DIR true    // for Mendel set to false, for Orca set to true
-#define INVERT_Y_DIR true    // for Mendel set to true, for Orca set to false
-#define INVERT_Z_DIR true    // for Mendel set to false, for Orca set to true
-#define INVERT_E0_DIR false   // for direct drive extruder v9 set to true, for geared extruder set to false
+#define INVERT_X_DIR false    // for Mendel set to false, for Orca set to true
+#define INVERT_Y_DIR false    // for Mendel set to true, for Orca set to false
+#define INVERT_Z_DIR false    // for Mendel set to false, for Orca set to true
+#define INVERT_E0_DIR true   // for direct drive extruder v9 set to true, for geared extruder set to false
 #define INVERT_E1_DIR true   // for direct drive extruder v9 set to true, for geared extruder set to false
 #define INVERT_E2_DIR true   // for direct drive extruder v9 set to true, for geared extruder set to false
 
